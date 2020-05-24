@@ -31,8 +31,12 @@
     float: left;
     height: 75%;
     padding: 5%;
+    overflow:scroll;
 }
 
+.example::-webkit-scrollbar {
+    display: none;
+  }
 .item {
     height:100%;
     width:100%

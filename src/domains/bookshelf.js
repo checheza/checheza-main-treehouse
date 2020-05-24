@@ -3,6 +3,7 @@ import BookshelfBackground from '../assets/bookshelf_background.png';
 import BookBackground from '../assets/book_cover.png';
 import $ from 'jquery';
 import 'slick-carousel';
+import AddMoreImage from '../assets/add-more-400.jpg';
 
 class BookshelfDomain {
     constructor(widget) {
@@ -30,7 +31,21 @@ class BookshelfDomain {
             adaptiveHeight: true,
             touchTreshold: 1
           });
-      
+          
+          let bookElement = document.createElement("div");
+          bookElement.classList.add("book_preview", "fadeIn", "animated");
+
+          let bookCoverElement = document.createElement("img");
+          bookCoverElement.classList.add("cover_thumb");
+          bookCoverElement.src = AddMoreImage;
+          
+          bookElement.appendChild(bookCoverElement);
+
+          bookElement.addEventListener('click', () => {
+              this.widget.openDomain('modules', 'book');
+          });
+
+          $('#swipe').slick('slickAdd', bookElement);
 
         for(let book of books) {
             Core.filesystem.getUri(`/books/${book}/front.png`)

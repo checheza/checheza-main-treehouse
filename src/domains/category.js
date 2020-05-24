@@ -21,6 +21,11 @@ class CategoryDomain {
 
     render() {
         return `
+        <style>
+            #sections::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
         <div id="${ styles.widgetBackground}" style="background-color: rgb(54, 37, 16);">
             <div style="color:#fff;" class="${ styles_.instructions }">
                 Play now
@@ -44,7 +49,7 @@ class CategoryDomain {
             let sectionItem = document.createElement('div');
             sectionItem.classList.add(categories.section_item);
             sectionItem.addEventListener('click', () => { Core.startWidget(addon.identifier) });
-            sectionItem.innerHTML = `<img class="image_class" src="${addon.path.uri}/${addon.icon}">`;
+            sectionItem.innerHTML = `<img style="transform: scale(1.2) translateX(6%) translateY(6%);" class="image_class" src="${addon.path.uri}/${addon.icon}">`;
             document.getElementById('sections').appendChild(sectionItem);
         }
     }

@@ -6,7 +6,6 @@ import ModulesDomain from './domains/modules';
 import ModuleDomain from './domains/module';
 import BookshelfDomain from './domains/bookshelf';
 import BookDomain from './domains/book';
-import BookStore from './domains/bookstore';
 
 class Treehouse extends Widget {
     constructor() {
@@ -18,8 +17,7 @@ class Treehouse extends Widget {
             "modules": new ModulesDomain(this),
             "module": new ModuleDomain(this),
             "bookshelf": new BookshelfDomain(this),
-            "book": new BookDomain(this),
-            "bookstore": new BookStore(this)
+            "book": new BookDomain(this)
         }
     }
 }

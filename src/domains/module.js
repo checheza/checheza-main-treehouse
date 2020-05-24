@@ -6,14 +6,20 @@ class ModuleDomain {
         this.widget = widget;
     }
 
-    start(module) {
+    start(payload) {
+        let module = payload.module;
+        let isModule = payload.isModule;
+
         document.getElementById('module_title').innerText = module.title; 
         document.getElementById('module_description').innerText = module.description;   
         document.getElementById('module_image').setAttribute("src", module.pictures[0]);
         
         document.getElementById('module_download').addEventListener('click', e => { 
             e.preventDefault();
-            Core.backend.downloadModule(module.file); 
+            if(isModule)
+                Core.backend.downloadModule(module.file); 
+            else
+                Core.backend.downloadBook(module.file);
         });
 
         Core.utils.addBackButton();
