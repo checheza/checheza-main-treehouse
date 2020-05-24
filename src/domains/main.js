@@ -29,7 +29,11 @@ class MainDomain {
                 elem.classList.add(styles.pulse);
             }
             elem.addEventListener('click', e => {
-                this.widget.openDomain('category', e.target.id);
+                if ( e.target.id === 'reading' ) {
+                    this.widget.openDomain('bookshelf');
+                } else {
+                    this.widget.openDomain('category', e.target.id);
+                }
             });
         });
 

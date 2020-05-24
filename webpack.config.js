@@ -14,8 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, 'build/')
   },
   externals: {
-    'checheza_core': 'checheza_core',
-    'jquery': 'jquery'
+    'checheza_core': 'checheza_core'
   },
   module: {
     rules: [
