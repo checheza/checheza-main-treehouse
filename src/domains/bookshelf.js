@@ -48,7 +48,7 @@ class BookshelfDomain {
           $('#swipe').slick('slickAdd', bookElement);
 
         for(let book of books) {
-            Core.filesystem.getUri(`/books/${book}/front.png`)
+            Core.filesystem.getUri(`/books/${book}/page1.png`)
             .then(bookCover => {
                 let bookElement = document.createElement("div");
                 bookElement.classList.add("book_preview", "fadeIn", "animated");

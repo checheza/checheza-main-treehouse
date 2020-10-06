@@ -28,7 +28,7 @@ class CategoryDomain {
         </style>
         <div id="${ styles.widgetBackground}" style="background-color: rgb(54, 37, 16);">
             <div style="color:#fff;" class="${ styles_.instructions }">
-                Play now
+                Select a Game to Play
             </div>
     
             <div id="sections" class="${ categories.sections }">
