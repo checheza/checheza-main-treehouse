@@ -67,6 +67,7 @@
     background-image: url('./reading.png');
     background-size: 83% 93%;
     background-repeat: no-repeat;
+    background-size: contain;
     position: inherit;
     top: 29%;
     left: 63%;
