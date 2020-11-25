@@ -1,7 +1,10 @@
 .module_class {
     float: left;
     width: 57%;
-    height: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .row:after {
@@ -12,11 +15,9 @@
 
 .module_math {
     display: flex;
-}
-
-.module_math {
     padding-top: 0%;
-  }
+    width: 100%;
+}
 
 .image_class {
     max-width: 100%;
@@ -26,6 +27,7 @@
 
 .text_side {
     width: 43%;
+    height: 100vh;
 }
 
 .downloadButton {
@@ -65,5 +67,5 @@
 
   .text_items {
       padding: 10%;
-      padding-right: 25%;
+      padding-right: 5%;
   }

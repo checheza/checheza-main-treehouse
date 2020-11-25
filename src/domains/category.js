@@ -49,7 +49,7 @@ class CategoryDomain {
             let sectionItem = document.createElement('div');
             sectionItem.classList.add(categories.section_item);
             sectionItem.addEventListener('click', () => { Core.startWidget(addon.identifier) });
-            sectionItem.innerHTML = `<img style="transform: scale(1.2) translateX(6%) translateY(6%);" class="image_class" src="${addon.path.uri}/${addon.icon}">`;
+            sectionItem.setAttribute('style', `background-image: url('${addon.path.uri}/${addon.icon}'); background-repeat; no-repeat; background-size: scale; background-position: center center;`);
             document.getElementById('sections').appendChild(sectionItem);
         }
     }
