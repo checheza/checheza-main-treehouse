@@ -44,6 +44,16 @@ class ModuleDomain {
                     </div>
                 </section>
             </div>
+        </div>
+        <!-- The Modal -->
+        <div id="downloadingModal" class="modal" onclick="document.getElementById('downloadingModal').style.display='none';">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close-modal" onclick="document.getElementById('downloadingModal').style.display='none';">&times;</span>
+                <div id="modal-body" title="Downloading...">Downloading...</div>
+            </div>
+
         </div>`
     }
 }

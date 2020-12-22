@@ -28,6 +28,7 @@
 .text_side {
     width: 43%;
     height: 100vh;
+    overflow-y: auto;
 }
 
 .downloadButton {
@@ -69,3 +70,4 @@
       padding: 10%;
       padding-right: 5%;
   }
+  

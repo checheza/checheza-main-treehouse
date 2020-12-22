@@ -121,7 +121,7 @@ class BookDomain {
 	getPage(path, i) {
 		return `<div class="page" style="width:${$(
 			'#core_app_container'
-		).width()}px;" data-page="${i}"><img src="${path}"></div>`;
+		).width()}px;" data-page="${i}"><img alt="${path}" src="${path}"></div>`;
 	}
 
 	render() {
