@@ -66,11 +66,11 @@ class BookDomain {
 
 					
 					for (let i = 1; i < this.bookLength; i++) {
-						$('.swipe-wrap').append(this.getPage(`${this.path}page${i}.png`, i));
+						$('.swipe-wrap').append(this.getPage(`${this.path}/page${i}.png`, i));
 					}
 
                     for (let i = 1; i < audioLength; i++) {
-						this.audio.push(`${this.path}page${i}.ogg`);
+						this.audio.push(`${this.path}/page${i}.ogg`);
                     }
                     
                     $('.swipe-wrap').css('width', ($('.swipe-wrap > div').length * $('#core_app_container').width()) + "px");
