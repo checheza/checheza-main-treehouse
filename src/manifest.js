@@ -1,8 +1,8 @@
 const Manifest = {
     "name": "Checheza Treehouse",
-    "identifier": "checheza.widget.treehouse",
+    "identifier": "checheza.main.treehouse",
     "author": "Checheza AB",
-    "version": "0.1",
+    "version": "0.1.0",
     "type": "main",
     "category": "main",
     "icon": null
